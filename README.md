@@ -35,7 +35,7 @@ todo-react-qa-example/
 
 ### 1. Create sample project in GitHub : `todolist`
 
-Create a new public React + TypeScript + Vite repository ([`danhhoangjunior/todo-react-qa-example`](https://github.com/danhhoangjunior/todo-react-qa-example)) and install dependencies:
+Create a new public React + TypeScript + Vite repository ([`appdo-dev/todo-react-qa-example`](https://github.com/appdo-dev/todo-react-qa-example)) and install dependencies:
 
 ```bash
 npm install react react-dom
