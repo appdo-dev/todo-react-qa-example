@@ -1,0 +1,4 @@
+node_modules
+dist
+ai-testing-tool-results.json
+.env

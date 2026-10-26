@@ -1,0 +1,30 @@
+{
+  "name": "todo-react-qa-example",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal React.js Todo App example integrated with testing-tool-js (@ai-testing-tool/forge-vitest) and Jira qa-analyzer",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "qa:test": "NODE_PATH=../testing-tool-js/node_modules vitest run --config vitest.qa.config.ts",
+    "qa:ingest": "NODE_PATH=../testing-tool-js/node_modules vitest run --config vitest.qa.config.ts && NODE_PATH=../testing-tool-js/node_modules forge-api-client --project APPDO --launch \"React Todo Example Smoke (v1.0.0 - Sprint 1)\" --report ai-testing-tool-results.json"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@ai-testing-tool/forge-api-client": "^2.2.1",
+    "@ai-testing-tool/forge-commons": "^2.2.1",
+    "@ai-testing-tool/forge-vitest": "^2.2.1",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.0.0",
+    "vitest": "^3.2.4"
+  }
+}
