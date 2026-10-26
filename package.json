@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "qa:test": "NODE_PATH=../testing-tool-js/node_modules vitest run --config vitest.qa.config.ts",
-    "qa:ingest": "NODE_PATH=../testing-tool-js/node_modules vitest run --config vitest.qa.config.ts && NODE_PATH=../testing-tool-js/node_modules forge-api-client --project TODO --launch \"React Todo Example Smoke (v1.0.0 - Sprint 1)\" --report ai-testing-tool-results.json"
+    "qa:ingest": "set -a && [ -f .env ] && . ./.env; set +a && NODE_PATH=../testing-tool-js/node_modules vitest run --config vitest.qa.config.ts && NODE_PATH=../testing-tool-js/node_modules forge-api-client --project \"${AI_TESTING_TOOL_PROJECT_KEY:-TODO}\" --launch \"${AI_TESTING_TOOL_LAUNCH_NAME:-React Todo Example Smoke (v1.0.0 - Sprint 1)}\" --report ai-testing-tool-results.json"
   },
   "dependencies": {
     "react": "^19.2.3",
