@@ -19,7 +19,7 @@ export default defineConfig({
         '@ai-testing-tool/forge-vitest',
         {
           mode: (process.env.AI_TESTING_TOOL_MODE as 'off' | 'file' | 'ingest' | undefined) ?? 'file',
-          projectKey: process.env.AI_TESTING_TOOL_PROJECT_KEY ?? 'APPDO',
+          projectKey: process.env.AI_TESTING_TOOL_PROJECT_KEY ?? 'TODO',
           launchName:
             process.env.AI_TESTING_TOOL_LAUNCH_NAME ??
             'React Todo Example Smoke (v1.0.0 - Sprint 1)',

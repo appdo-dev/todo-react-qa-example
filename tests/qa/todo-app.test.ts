@@ -13,7 +13,7 @@ import {
 describe('React Todo App Example', () => {
   describe('Task Creation & Validation', () => {
     test('Create Todo item with trimmed title and priority', async () => {
-      await qa.issueKeys(['APPDO-1']);
+      await qa.issueKeys(['TODO-1']);
       await qa.suite('Todo Example App\tTask Creation');
       await qa.plan('Smoke');
       await qa.fixVersion('1.0.0');
@@ -48,7 +48,7 @@ describe('React Todo App Example', () => {
     });
 
     test('Reject empty, overlong, or duplicate active Todo titles', async () => {
-      await qa.issueKeys(['APPDO-1']);
+      await qa.issueKeys(['TODO-1']);
       await qa.suite('Todo Example App\tTask Creation');
       await qa.plan('Smoke');
       await qa.fixVersion('1.0.0');
@@ -81,7 +81,7 @@ describe('React Todo App Example', () => {
 
   describe('State Transitions & Filtering', () => {
     test('Toggle completion state, delete item, and clear completed Todos', async () => {
-      await qa.issueKeys(['APPDO-1']);
+      await qa.issueKeys(['TODO-1']);
       await qa.suite('Todo Example App\tState & Filtering');
       await qa.plan('Smoke');
       await qa.fixVersion('1.0.0');
@@ -112,7 +112,7 @@ describe('React Todo App Example', () => {
     });
 
     test('Filter Todo items by status, search keyword, and compute completion stats', async () => {
-      await qa.issueKeys(['APPDO-1']);
+      await qa.issueKeys(['TODO-1']);
       await qa.suite('Todo Example App\tState & Filtering');
       await qa.plan('Smoke');
       await qa.fixVersion('1.0.0');

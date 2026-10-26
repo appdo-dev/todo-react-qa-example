@@ -69,7 +69,7 @@ export default defineConfig({
         '@ai-testing-tool/forge-vitest',
         {
           mode: (process.env.AI_TESTING_TOOL_MODE as 'off' | 'file' | 'ingest' | undefined) ?? 'file',
-          projectKey: process.env.AI_TESTING_TOOL_PROJECT_KEY ?? 'APPDO',
+          projectKey: process.env.AI_TESTING_TOOL_PROJECT_KEY ?? 'TODO',
           launchName:
             process.env.AI_TESTING_TOOL_LAUNCH_NAME ??
             'React Todo Example Smoke (v1.0.0 - Sprint 1)',
@@ -89,7 +89,7 @@ import { qa } from '@ai-testing-tool/forge-vitest/vitest';
 import { createTodo } from '../../src/lib/todo-store';
 
 test('Create Todo item with trimmed title and priority', async () => {
-  await qa.issueKeys(['APPDO-1']);
+  await qa.issueKeys(['TODO-1']);
   await qa.suite('Todo Example App\tTask Creation');
   await qa.plan('Smoke');
   await qa.fixVersion('1.0.0');
