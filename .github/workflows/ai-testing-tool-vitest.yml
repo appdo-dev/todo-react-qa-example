@@ -13,7 +13,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: npm
       - run: npm install
       - run: npx vitest run --config vitest.config.ts --reporter=json --outputFile=ai-testing-tool-results.json
       - name: Upload to AiTestingTool
